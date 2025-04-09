@@ -1,0 +1,36 @@
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Experience
+#experience {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  #experience-canvas {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+}
